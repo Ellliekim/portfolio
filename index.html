@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        
+        .image-container {
+            margin: 30px auto;
+            max-width: 800px;
+            text-align: center;
+        }
+        
+        .image-link {
+            display: inline-block;
+            margin: 20px;
+            border: 3px solid #ddd;
+            border-radius: 50px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .image-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            border-color: #000000;
+        }
+        
+        .styled-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 12px 12px 0 0;
+            transition: transform 0.3s ease;
+        }
+        
+        .image-link:hover .styled-image {
+            transform: scale(1.02);
+        }
+        
+        .image-caption {
+            padding: 10px;
+            background-color: white;
+            color: #333;
+            font-size: 14px;
+            border-top: 1px solid #eee;
+            border-radius: 0 0 12px 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <a href="https://example.com/page1" class="image-link" target="_blank">
+            <img src="Group 1.jpg" alt="Demo Image 1" class="styled-image">
+        </a>
+        
+        <br>
+        
+        <a href="https://example.com/page2" class="image-link" target="_blank">
+            <img src="Group 2.jpg" alt="Demo Image 2" class="styled-image">
+        </a>
+    </div>
+</body>
+</html>
